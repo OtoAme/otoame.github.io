@@ -218,11 +218,13 @@ body {
 }
 
 .btn-sub {
-    font-size: 0.75rem;
+    font-size: 0.9rem; /* Increased size for Cormorant as it runs small */
     color: var(--text-light);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
     font-style: italic;
     letter-spacing: 0.05em;
+    text-transform: none; /* Reset uppercase if previously set */
 }
 
 /* Footer */
