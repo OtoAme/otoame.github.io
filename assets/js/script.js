@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Fade-in entry animation
     const card = document.querySelector('.glass-card');
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
 
     setTimeout(() => {
-        card.style.transition = 'opacity 1s ease, transform 1s ease';
         card.style.opacity = '1';
         card.style.transform = 'translateY(0)';
     }, 300);

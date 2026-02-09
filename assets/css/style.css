@@ -105,7 +105,10 @@ body {
     padding: 3rem 2rem;
     text-align: center;
     position: relative;
-    transition: transform 0.3s ease;
+    /* Initial state for animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .glass-card::before {
