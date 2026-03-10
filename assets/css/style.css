@@ -215,6 +215,7 @@ body {
     flex-grow: 1;
     text-align: left;
     padding-left: 1rem;
+    white-space: nowrap;
 }
 
 .btn-sub {
@@ -225,6 +226,7 @@ body {
     font-style: italic;
     letter-spacing: 0.05em;
     text-transform: none; /* Reset uppercase if previously set */
+    white-space: nowrap;
 }
 
 /* Footer */
@@ -260,6 +262,28 @@ body {
         font-size: 2.5rem;
     }
     .glass-card {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.2rem;
+    }
+    .site-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.3em;
+    }
+    .nav-btn {
+        padding: 0.8rem 1rem;
+        gap: 0.5rem;
+    }
+    .btn-text {
+        font-size: 1rem;
+        padding-left: 0.2rem;
+        flex-shrink: 0; /* Always show full main text */
+    }
+    .btn-sub {
+        font-size: 0.85rem;
+        max-width: 45%; /* Prevent pushing layout too wide */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .btn-icon {
+        flex-shrink: 0;
     }
 }
